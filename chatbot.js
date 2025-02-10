@@ -17,7 +17,7 @@ chatbotInput.addEventListener('keypress', async (e) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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' // Votre clé API
+                'Authorization': `Bearer ${process.env.OPENAI_API_KEY}` // Clé API sécurisée
             },
             body: JSON.stringify({
                 model: "gpt-3.5-turbo",
